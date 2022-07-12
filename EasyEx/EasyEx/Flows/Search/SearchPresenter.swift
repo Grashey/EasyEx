@@ -9,15 +9,16 @@ import Foundation
 
 protocol iSearchPresenter {
     
-    var result: [[String]] { get }
+    var result: [Security] { get }
     func search(_ value: String)
+    func clear()
 }
 
 class SearchPresenter: iSearchPresenter {
     
     weak var viewController: SearchViewController?
     private let networkService: iSearchNetworkService
-    var result: [[String]] = []
+    var result: [Security] = []
     
     init(networkService: iSearchNetworkService) {
         self.networkService = networkService
@@ -25,7 +26,6 @@ class SearchPresenter: iSearchPresenter {
     
     func search(_ value: String) {
         networkService.search(value: value) { [weak self] result in
-            
             switch result {
             case .success(let data):
                 self?.result = data.securities.data
@@ -35,5 +35,10 @@ class SearchPresenter: iSearchPresenter {
             case .failure(let error): print(error)
             }
         }
+    }
+    
+    func clear() {
+        result = []
+        viewController?.reloadView()
     }
 }

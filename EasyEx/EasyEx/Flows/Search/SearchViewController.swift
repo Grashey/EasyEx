@@ -51,7 +51,9 @@ extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.description(), for: indexPath)
-            (cell as? SearchTableViewCell)?.configure(value: presenter?.result[indexPath.row] ?? [])
+            if let security = presenter?.result[indexPath.row] {
+                (cell as? SearchTableViewCell)?.configure(value: security)
+            }
             return cell
         }
         return UITableViewCell()
@@ -72,7 +74,11 @@ extension SearchViewController: UITableViewDelegate {
 extension SearchViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        guard searchText.count > 2 else { return }
+        guard searchText.count > 2 else {
+            if searchText.isEmpty {
+                presenter?.clear()
+            }
+            return }
         presenter?.search(searchText)
     }
     

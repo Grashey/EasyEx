@@ -36,7 +36,6 @@ class SearchTableViewCell: UITableViewCell {
         contentView.addSubview(idLabel)
     }
     
-    
     private func addConstraints() {
         NSLayoutConstraint.activate([
             nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
@@ -50,9 +49,9 @@ class SearchTableViewCell: UITableViewCell {
         idLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
     }
     
-    func configure(value: [String]) {
-        nameLabel.text = value.last
-        idLabel.text = value.first
+    func configure(value: Security) {
+        nameLabel.text = value.name
+        idLabel.text = value.id
     }
     
 }

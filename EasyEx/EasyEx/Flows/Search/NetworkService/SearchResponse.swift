@@ -13,6 +13,6 @@ struct SearchResponse: Codable {
 
     struct SearchData: Codable {
         let columns: [String]
-        let data: [[String]]
+        let data: [Security]
     }
 }
