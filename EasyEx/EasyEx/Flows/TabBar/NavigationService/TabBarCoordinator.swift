@@ -13,7 +13,7 @@ class TabBarCoordinator {
     private let controller = TabBarController()
     private let assembly: iAssembly = Assembly()
     private lazy var searchCoordinator = SearchCoordinator(navigationController: controller.searchNavigation, vcAssembly: assembly)
-//    private lazy var favoritesCoordinator = FavoritesCoordinator(navigationController: controller.favoritesNavigation)
+    private lazy var favoritesCoordinator = FavoritesCoordinator(navigationController: controller.favoritesNavigation, vcAssembly: assembly)
 
     init(window: UIWindow?) {
         self.window = window
@@ -22,6 +22,6 @@ class TabBarCoordinator {
     func start() {
         window?.rootViewController = controller
         searchCoordinator.start()
-//        favoritesCoordinator.start()
+        favoritesCoordinator.start()
     }
 }
