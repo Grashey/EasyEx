@@ -8,7 +8,7 @@
 import Foundation
 
 enum NetworkUrl {
-    
+
     static let baseUrl = "https://iss.moex.com/iss"
     static let engines = "/engines"
     static let markets = "/markets"

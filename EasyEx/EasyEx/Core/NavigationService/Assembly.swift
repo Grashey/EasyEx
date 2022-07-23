@@ -8,7 +8,7 @@
 import UIKit
 
 class Assembly: iAssembly {
-    
+
     func build(_ moduleName: ModuleName) -> UIViewController {
         switch moduleName {
         case .search: return SearchAssembly().build()

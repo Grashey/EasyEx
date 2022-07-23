@@ -8,7 +8,6 @@
 import Foundation
 
 protocol iHTTPClient {
-
     func request<ResponseType: Decodable>(request: URLRequest, completion: @escaping (Result<ResponseType, Error>) -> Void)
 }
 

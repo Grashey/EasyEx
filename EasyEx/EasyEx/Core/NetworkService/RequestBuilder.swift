@@ -8,7 +8,6 @@
 import Foundation
 
 protocol iRequestBuilder {
-
     func makeRequest(route: iRoute, engines: String?, markets: String?, boards: String?, securities: String) -> URLRequest
 }
 
@@ -23,7 +22,7 @@ class RequestBuilder: iRequestBuilder {
             items.append(URLQueryItem(name: $0.key, value: value))
         }
         components?.queryItems = items
-        
+
         if let url = components?.url {
             var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy)
             request.httpMethod = route.method
@@ -31,5 +30,4 @@ class RequestBuilder: iRequestBuilder {
         }
         return URLRequest(url: URL(fileURLWithPath: ""))
     }
-
 }

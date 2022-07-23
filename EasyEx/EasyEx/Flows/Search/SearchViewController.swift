@@ -8,16 +8,16 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-    
+
     var presenter: iSearchPresenter?
-    
+
     private lazy var tableView: UITableView = {
         $0.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.description())
         $0.dataSource = self
         $0.delegate = self
         return $0
     }(UITableView())
-    
+
     private lazy var searchController: UISearchController = {
         $0.searchBar.searchBarStyle = .prominent
         $0.searchBar.placeholder = SearchConsts.searchBarPlaceholder
@@ -27,7 +27,7 @@ class SearchViewController: UIViewController {
         $0.searchBar.delegate = self
         return $0
     }(UISearchController())
-    
+
     override func loadView() {
         view = tableView
     }
@@ -73,7 +73,6 @@ extension SearchViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         presenter?.clear()
     }
-    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         dismissKeyboard()
     }

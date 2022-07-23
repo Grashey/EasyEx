@@ -12,7 +12,7 @@ protocol iRoute {
     var url: String { get }
     var baseURL: String { get }
     var parameters: [String: String] { get }
-    
+
     func makeURL() -> String
 }
 

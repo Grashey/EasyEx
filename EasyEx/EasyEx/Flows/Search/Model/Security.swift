@@ -10,7 +10,7 @@ import Foundation
 struct Security: Codable {
     let id: String
     let name: String
-    
+
     init(from decoder: Decoder) throws {
         var container = try decoder.unkeyedContainer()
         id = try container.decode(String.self)

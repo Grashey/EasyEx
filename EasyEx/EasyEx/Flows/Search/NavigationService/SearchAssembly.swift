@@ -8,7 +8,7 @@
 import UIKit
 
 class SearchAssembly {
-    
+
     func build() -> UIViewController {
         let controller = SearchViewController()
         let requestBuilder = RequestBuilder()

@@ -19,5 +19,4 @@ class RootCoordinator: iCoordinator {
     func start() {
         tabBarCoordinator.start()
     }
-
 }

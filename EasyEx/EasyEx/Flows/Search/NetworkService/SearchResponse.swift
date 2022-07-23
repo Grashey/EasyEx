@@ -8,7 +8,7 @@
 import Foundation
 
 struct SearchResponse: Codable {
-    
+
     let securities: SearchData
 
     struct SearchData: Codable {

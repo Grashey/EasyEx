@@ -12,14 +12,14 @@ enum SearchRoute {
 }
 
 extension SearchRoute: iRoute {
-    
+
     var url: String {
         switch self {
         case .search:
             return NetworkUrl.securities
         }
     }
-    
+
     var parameters: [String : String] {
         ["q" : "",
          "iss.meta" : "off",
