@@ -93,6 +93,7 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+
 		4A91E8BE288BFDE4004FB778 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +102,7 @@
 			path = Favorites;
 			sourceTree = "<group>";
 		};
+
 		4AF93F73287587B800103449 = {
 			isa = PBXGroup;
 			children = (
