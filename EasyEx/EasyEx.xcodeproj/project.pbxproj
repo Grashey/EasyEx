@@ -7,21 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A85F7E3287E03CE00AF8995 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85F7E2287E03CE00AF8995 /* Security.swift */; };
+		4A91E8BD288BE875004FB778 /* SearchConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A91E8BC288BE875004FB778 /* SearchConsts.swift */; };
 		4AF93F80287587B900103449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F7F287587B900103449 /* AppDelegate.swift */; };
 		4AF93F82287587B900103449 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F81287587B900103449 /* SceneDelegate.swift */; };
-		4AF93F84287587B900103449 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F83287587B900103449 /* ViewController.swift */; };
 		4AF93F89287587BA00103449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF93F88287587BA00103449 /* Assets.xcassets */; };
 		4AF93F8C287587BA00103449 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF93F8A287587BA00103449 /* LaunchScreen.storyboard */; };
+		4AF93F9428758BCF00103449 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F9328758BCF00103449 /* Route.swift */; };
+		4AF93F9628758C2C00103449 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F9528758C2C00103449 /* HTTPClient.swift */; };
+		4AF93F9828758F0D00103449 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F9728758F0D00103449 /* RequestBuilder.swift */; };
+		4AF93F9B28758F9B00103449 /* NetworkUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F9A28758F9B00103449 /* NetworkUrl.swift */; };
+		4AF93F9D2875B7A200103449 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F9C2875B7A200103449 /* Coordinator.swift */; };
+		4AF93F9F2875B7DA00103449 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F9E2875B7DA00103449 /* RootCoordinator.swift */; };
+		4AF93FA32875B85700103449 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FA22875B85700103449 /* TabBarController.swift */; };
+		4AF93FA52875B95500103449 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FA42875B95500103449 /* TabBarCoordinator.swift */; };
+		4AF93FAA2875BA9900103449 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FA92875BA9900103449 /* SearchViewController.swift */; };
+		4AF93FAC2875BAA800103449 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FAB2875BAA800103449 /* SearchPresenter.swift */; };
+		4AF93FAF2875BAE500103449 /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FAE2875BAE500103449 /* SearchCoordinator.swift */; };
+		4AF93FB12875BC3D00103449 /* iAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FB02875BC3D00103449 /* iAssembly.swift */; };
+		4AF93FB32875BC7A00103449 /* SearchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FB22875BC7A00103449 /* SearchAssembly.swift */; };
+		4AF93FB52875BCE900103449 /* SearchNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FB42875BCE900103449 /* SearchNetworkService.swift */; };
+		4AF93FB72875C1B800103449 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FB62875C1B800103449 /* Assembly.swift */; };
+		4AF93FB92875C23700103449 /* ModuleName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FB82875C23700103449 /* ModuleName.swift */; };
+		4AF93FBB2875C44C00103449 /* SearchRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FBA2875C44C00103449 /* SearchRoute.swift */; };
+		4AF93FBF2875D56D00103449 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FBE2875D56D00103449 /* SearchTableViewCell.swift */; };
+		4AF93FC12875E94A00103449 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93FC02875E94A00103449 /* SearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A85F7E2287E03CE00AF8995 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+		4A91E8BC288BE875004FB778 /* SearchConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConsts.swift; sourceTree = "<group>"; };
 		4AF93F7C287587B900103449 /* EasyEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF93F7F287587B900103449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AF93F81287587B900103449 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4AF93F83287587B900103449 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4AF93F88287587BA00103449 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AF93F8B287587BA00103449 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AF93F8D287587BA00103449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF93F9328758BCF00103449 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		4AF93F9528758C2C00103449 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		4AF93F9728758F0D00103449 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		4AF93F9A28758F9B00103449 /* NetworkUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUrl.swift; sourceTree = "<group>"; };
+		4AF93F9C2875B7A200103449 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4AF93F9E2875B7DA00103449 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		4AF93FA22875B85700103449 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4AF93FA42875B95500103449 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		4AF93FA92875BA9900103449 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4AF93FAB2875BAA800103449 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		4AF93FAE2875BAE500103449 /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		4AF93FB02875BC3D00103449 /* iAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iAssembly.swift; sourceTree = "<group>"; };
+		4AF93FB22875BC7A00103449 /* SearchAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAssembly.swift; sourceTree = "<group>"; };
+		4AF93FB42875BCE900103449 /* SearchNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkService.swift; sourceTree = "<group>"; };
+		4AF93FB62875C1B800103449 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		4AF93FB82875C23700103449 /* ModuleName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleName.swift; sourceTree = "<group>"; };
+		4AF93FBA2875C44C00103449 /* SearchRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRoute.swift; sourceTree = "<group>"; };
+		4AF93FBE2875D56D00103449 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		4AF93FC02875E94A00103449 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +75,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A85F7E4287E03FB00AF8995 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A85F7E2287E03CE00AF8995 /* Security.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A85F7E5287E040400AF8995 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AF93FBE2875D56D00103449 /* SearchTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4AF93F73287587B800103449 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +112,104 @@
 			children = (
 				4AF93F7F287587B900103449 /* AppDelegate.swift */,
 				4AF93F81287587B900103449 /* SceneDelegate.swift */,
-				4AF93F83287587B900103449 /* ViewController.swift */,
+				4AF93FA12875B83D00103449 /* Core */,
+				4AF93FA82875BA5F00103449 /* Flows */,
 				4AF93F88287587BA00103449 /* Assets.xcassets */,
 				4AF93F8A287587BA00103449 /* LaunchScreen.storyboard */,
 				4AF93F8D287587BA00103449 /* Info.plist */,
 			);
 			path = EasyEx;
+			sourceTree = "<group>";
+		};
+		4AF93F9928758F7A00103449 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				4AF93F9328758BCF00103449 /* Route.swift */,
+				4AF93F9A28758F9B00103449 /* NetworkUrl.swift */,
+				4AF93F9528758C2C00103449 /* HTTPClient.swift */,
+				4AF93F9728758F0D00103449 /* RequestBuilder.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		4AF93FA02875B82A00103449 /* NavigationService */ = {
+			isa = PBXGroup;
+			children = (
+				4AF93FB02875BC3D00103449 /* iAssembly.swift */,
+				4AF93FB62875C1B800103449 /* Assembly.swift */,
+				4AF93FB82875C23700103449 /* ModuleName.swift */,
+				4AF93F9C2875B7A200103449 /* Coordinator.swift */,
+				4AF93F9E2875B7DA00103449 /* RootCoordinator.swift */,
+			);
+			path = NavigationService;
+			sourceTree = "<group>";
+		};
+		4AF93FA12875B83D00103449 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4AF93FA02875B82A00103449 /* NavigationService */,
+				4AF93F9928758F7A00103449 /* NetworkService */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4AF93FA62875B9D100103449 /* NavigationService */ = {
+			isa = PBXGroup;
+			children = (
+				4AF93FA42875B95500103449 /* TabBarCoordinator.swift */,
+			);
+			path = NavigationService;
+			sourceTree = "<group>";
+		};
+		4AF93FA72875B9DF00103449 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4AF93FA22875B85700103449 /* TabBarController.swift */,
+				4AF93FA62875B9D100103449 /* NavigationService */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		4AF93FA82875BA5F00103449 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				4AF93FA72875B9DF00103449 /* TabBar */,
+				4AF93FAD2875BAAF00103449 /* Search */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		4AF93FAD2875BAAF00103449 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4A85F7E5287E040400AF8995 /* View */,
+				4A85F7E4287E03FB00AF8995 /* Model */,
+				4AF93FBC2875C57200103449 /* NavigationService */,
+				4AF93FBD2875C58400103449 /* NetworkService */,
+				4AF93FAB2875BAA800103449 /* SearchPresenter.swift */,
+				4AF93FA92875BA9900103449 /* SearchViewController.swift */,
+				4A91E8BC288BE875004FB778 /* SearchConsts.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		4AF93FBC2875C57200103449 /* NavigationService */ = {
+			isa = PBXGroup;
+			children = (
+				4AF93FAE2875BAE500103449 /* SearchCoordinator.swift */,
+				4AF93FB22875BC7A00103449 /* SearchAssembly.swift */,
+			);
+			path = NavigationService;
+			sourceTree = "<group>";
+		};
+		4AF93FBD2875C58400103449 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				4AF93FB42875BCE900103449 /* SearchNetworkService.swift */,
+				4AF93FBA2875C44C00103449 /* SearchRoute.swift */,
+				4AF93FC02875E94A00103449 /* SearchResponse.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +282,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AF93F84287587B900103449 /* ViewController.swift in Sources */,
+				4AF93F9D2875B7A200103449 /* Coordinator.swift in Sources */,
+				4AF93FB32875BC7A00103449 /* SearchAssembly.swift in Sources */,
+				4AF93FAF2875BAE500103449 /* SearchCoordinator.swift in Sources */,
+				4AF93FBB2875C44C00103449 /* SearchRoute.swift in Sources */,
+				4AF93FAA2875BA9900103449 /* SearchViewController.swift in Sources */,
+				4AF93FAC2875BAA800103449 /* SearchPresenter.swift in Sources */,
+				4AF93F9628758C2C00103449 /* HTTPClient.swift in Sources */,
+				4AF93FB52875BCE900103449 /* SearchNetworkService.swift in Sources */,
+				4A91E8BD288BE875004FB778 /* SearchConsts.swift in Sources */,
+				4AF93FA32875B85700103449 /* TabBarController.swift in Sources */,
+				4AF93FBF2875D56D00103449 /* SearchTableViewCell.swift in Sources */,
+				4AF93F9428758BCF00103449 /* Route.swift in Sources */,
+				4AF93F9828758F0D00103449 /* RequestBuilder.swift in Sources */,
+				4AF93FA52875B95500103449 /* TabBarCoordinator.swift in Sources */,
+				4AF93FB12875BC3D00103449 /* iAssembly.swift in Sources */,
+				4AF93FC12875E94A00103449 /* SearchResponse.swift in Sources */,
+				4A85F7E3287E03CE00AF8995 /* Security.swift in Sources */,
+				4AF93F9B28758F9B00103449 /* NetworkUrl.swift in Sources */,
+				4AF93FB72875C1B800103449 /* Assembly.swift in Sources */,
 				4AF93F80287587B900103449 /* AppDelegate.swift in Sources */,
+				4AF93F9F2875B7DA00103449 /* RootCoordinator.swift in Sources */,
+				4AF93FB92875C23700103449 /* ModuleName.swift in Sources */,
 				4AF93F82287587B900103449 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +448,6 @@
 				INFOPLIST_FILE = EasyEx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,7 +475,6 @@
 				INFOPLIST_FILE = EasyEx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
