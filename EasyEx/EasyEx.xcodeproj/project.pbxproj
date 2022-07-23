@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A85F7E3287E03CE00AF8995 /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A85F7E2287E03CE00AF8995 /* Security.swift */; };
+		4A91E8BD288BE875004FB778 /* SearchConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A91E8BC288BE875004FB778 /* SearchConsts.swift */; };
 		4AF93F80287587B900103449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F7F287587B900103449 /* AppDelegate.swift */; };
 		4AF93F82287587B900103449 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF93F81287587B900103449 /* SceneDelegate.swift */; };
 		4AF93F89287587BA00103449 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF93F88287587BA00103449 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		4A85F7E2287E03CE00AF8995 /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+		4A91E8BC288BE875004FB778 /* SearchConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConsts.swift; sourceTree = "<group>"; };
 		4AF93F7C287587B900103449 /* EasyEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF93F7F287587B900103449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AF93F81287587B900103449 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				4AF93FBD2875C58400103449 /* NetworkService */,
 				4AF93FAB2875BAA800103449 /* SearchPresenter.swift */,
 				4AF93FA92875BA9900103449 /* SearchViewController.swift */,
+				4A91E8BC288BE875004FB778 /* SearchConsts.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				4AF93FAC2875BAA800103449 /* SearchPresenter.swift in Sources */,
 				4AF93F9628758C2C00103449 /* HTTPClient.swift in Sources */,
 				4AF93FB52875BCE900103449 /* SearchNetworkService.swift in Sources */,
+				4A91E8BD288BE875004FB778 /* SearchConsts.swift in Sources */,
 				4AF93FA32875B85700103449 /* TabBarController.swift in Sources */,
 				4AF93FBF2875D56D00103449 /* SearchTableViewCell.swift in Sources */,
 				4AF93F9428758BCF00103449 /* Route.swift in Sources */,

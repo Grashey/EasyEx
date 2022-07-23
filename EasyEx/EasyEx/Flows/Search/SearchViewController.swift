@@ -10,94 +10,84 @@ import UIKit
 class SearchViewController: UIViewController {
     
     var presenter: iSearchPresenter?
+    
     private lazy var tableView: UITableView = {
         $0.register(SearchTableViewCell.self, forCellReuseIdentifier: SearchTableViewCell.description())
+        $0.dataSource = self
+        $0.delegate = self
         return $0
     }(UITableView())
     
-    private lazy var searchBar: UISearchBar = {
-        $0.backgroundImage = UIImage()
-        $0.searchBarStyle = .prominent
+    private lazy var searchController: UISearchController = {
+        $0.searchBar.searchBarStyle = .prominent
+        $0.searchBar.placeholder = SearchConsts.searchBarPlaceholder
+        $0.searchBar.sizeToFit()
+        $0.obscuresBackgroundDuringPresentation = false
+        $0.searchResultsUpdater = self
+        $0.searchBar.delegate = self
         return $0
-    }(UISearchBar())
+    }(UISearchController())
     
     override func loadView() {
         view = tableView
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
-        tableView.delegate = self
-        searchBar.delegate = self
+        self.title = SearchConsts.mainTitle
+        navigationItem.searchController = searchController
     }
-    
     func reloadView() {
         tableView.reloadData()
     }
-
+    private func dismissKeyboard() {
+        searchController.searchBar.endEditing(true)
+    }
 }
 
 extension SearchViewController: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        2
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        section == .zero ? .zero : (presenter?.result.count ?? .zero)
+        presenter?.result.count ?? .zero
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.description(), for: indexPath)
-            if let security = presenter?.result[indexPath.row] {
-                (cell as? SearchTableViewCell)?.configure(value: security)
-            }
-            return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableViewCell.description(), for: indexPath)
+        if let security = presenter?.result[indexPath.row] {
+            (cell as? SearchTableViewCell)?.configure(value: security)
         }
-        return UITableViewCell()
+        return cell
     }
-
 }
 
 extension SearchViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        if section == .zero {
-            return searchBar
-        }
-        return nil
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        dismissKeyboard()
     }
 }
 
 extension SearchViewController: UISearchBarDelegate {
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        guard searchText.count > 2 else {
-            if searchText.isEmpty {
-                presenter?.clear()
-            }
-            return }
-        presenter?.search(searchText)
+        if searchText.isEmpty {
+            presenter?.clear()
+        }
     }
-    
-    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        self.view.addGestureRecognizer(tapGesture)
-    }
-    
-    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
-        self.view.gestureRecognizers?.removeLast()
-        return true
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        presenter?.clear()
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        self.view.endEditing(true)
+        dismissKeyboard()
     }
-    
-    @objc func dismissKeyboard() {
-        self.view.endEditing(true)
+}
+
+extension SearchViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.searchTextField.text, text.count > 2 else { return }
+        presenter?.search(text)
     }
-    
+}
+
+extension SearchViewController: UIScrollViewDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        dismissKeyboard()
+    }
 }
